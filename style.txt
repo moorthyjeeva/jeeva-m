@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background: black;
+    
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: auto;
+    background-position: right;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width=50px;
+}
+
+nav ul li{
+          display: inline-black;
+          list-style: none;
+          margin: 20px 40px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text {
+    margin-top:10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 9px;
+}
+.header-text h1 span{
+    color: red;
+}
+/*---------------------------about me--------------------*/
+#about{
+    padding: 90px 0;
+    color: white;
+background-color:black;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-2{
+    flex-basis:60%;
+    font-size: 20px;
+}
+.sub-title{
+    font-size: 500px;
+    font-weight: 800;
+    color: red;
+}
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right:40px;
+    font-size:38px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:100%;
+}
+.tab-contents ul li{
+    list-style:none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:red;
+    font-size:25px; 
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display:block;
+}
+/*---------------Qualification------------------*/
+#qualification{
+    padding: 70px 100px;
+    
+    background-color: black;
+     
+}
+
+.qualification-list ul li span{
+    font-size: 30px;
+    color:red;
+}
+.qualification-list ul li{
+    list-style: none;
+    margin:40px 10px;
+    font-size: 20px;
+    color: white;
+}
+/*--------------------personal details-------------------*/
+#personal details{
+   
+     padding:90px 100px;
+
+}
+.sub-title2 span{
+    font-size:40px;
+    color: red;
+    
+    
+}
+.personal-list table, th, td {
+  border: 1px solid black;
+    list-style: none;
+    margin:87px 100px;
+    font-size: 15px;
+    font-style
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

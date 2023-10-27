@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-UA-compatible" content="IE=edge">
+        <meta name ="viewport"content="width=device.width,initial-scale=1.0">
+        <title>personal website</title>
+        <link rel ="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="jeeva.png" class="logo" >
+                   
+                    
+                    <ul> 
+                       
+                        <li> <a href ="#">Home</a></li>
+                        <li> <a href ="#">About Me</a></li>
+                        <li> <a href ="#">Qualification</a></li>
+                        <li> <a href ="#">Personal Details</a></li>
+                        </ul>
+                </nav>
+                   
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, This is <span>JEEVA</span><br>from department of BCA</h1>
+                <style>
+                    *{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background: black;
+    
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: auto;
+    background-position: right;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width=50px;
+}
+
+nav ul li{
+          display: inline-black;
+          list-style: none;
+          margin: 20px 40px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text {
+    margin-top:10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 9px;
+    color: aliceblue;
+}
+.header-text h1 span{
+    color: red;
+}
+                </style>
+            </div>    
+            </div>
+        </div>
+        <!--- -------------------about------------------- --->
+        <div id="about">
+        <div class="container">
+            <div class="row">
+            
+                <div class="about-col-2">
+                <h1 class="sub-tile">About Me</h1>
+                    <p>      I am BCA student.I was born in the village of noorolai.I had completed my SSLC at Model school in sithal. Then now I studing college at Immaculate college for women in viriyur.My ambition is become a IT employee. and I like to read Mythological stories .my hobbies are maintain gardern.</p>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab"('skills')>skills</p>
+                    </div>
+                    <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        <li><span>Microsoft office</span><br>word<br>excel<br>powerpoint</li>
+                        <li><span>Type writing</span><br>English Lower<br>English Higher<br>Tamil Lower<br>tamil Lower</li>
+                        </ul>
+                  <style>
+                        #about{
+    padding: 90px 0;
+    color: black;
+background-color:dimgrey;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-2{
+    flex-basis:60%;
+    font-size: 20px;
+}
+.sub-title{
+    font-size: 500px;
+    font-weight: 800;
+    color: red;
+}
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right:40px;
+    font-size:38px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:100%;
+}
+.tab-contents ul li{
+    list-style:none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:red;
+    font-size:25px; 
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display:block;
+                        </style>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-----------------------------qualification---------------------->
+        <div id="qualification">
+    
+        <div class="container">
+        <h1 class="sub-title1">My Qualification</h1>
+            <div class="qualification-list">
+            <ul>
+                <li><span>SSLC</span>
+               <p> Institution name:Model school,sithal<br>Year of passing:2017-2018<br>Percentage:65%</p></li>
+                
+                <li><span>HSC</span>
+                <p>Institution name:model school,sithal<br>Year of passing:2019-2021<br>Percentage:74%</p></li>
+                
+                <li><span>BCA</span>
+                    <p>Institution name:Immaculate college for women,viriyur<br>Year of passing:2021-2024<br>Percentage:81%</p></li>
+                
+                </ul>
+            <style>
+                #qualification{
+    padding: 70px 100px;
+    
+    background-color: black;
+     
+}
+                .sub-title1 {
+    font-size:40px;
+    color: white;
+                }
+.qualification-list ul li span{
+    font-size: 30px;
+    color:red;
+}
+.qualification-list ul li{
+    list-style: none;
+    margin:40px 10px;
+    font-size: 20px;
+    color: white;
+}
+            </style>
+            
+            </div>
+        </div>
+      
+        </div>
+        <!-------------------------personal details---------------->
+<body style="background-color:dimgrey;">
+        <div id="personal details">
+        <div class="container">
+            <h2 class="sub-title2"><span>Personal Details</span></h2>
+            <div class="personal-list">
+                
+    <style>
+        
+        table, th, td {
+  border: 1px solid black;
+  border-collapse:collapse;
+}
+ritu{
+  border: 1px solid black;
+ color: black;
+    font-style: italic;
+}
+        .sub-title2 span{
+    font-size:40px;
+    color: black;
+    
+    
+}
+   .personal-list table, th, td {
+  border: 1px solid black;
+    list-style: none;
+    margin:87px 100px;
+    font-size: 20px;
+    font-style:italic
+    color: white;
+}
+     
+</style>
+                <body>
+
+                    <ritu><table>
+  
+  <tr>
+    <td>NAME</td>
+    <td>JEEVA</td>
+  </tr>
+  <tr>
+    <td>FATHER'S NAME</td>
+    <td>MOORTHY</td>
+  </tr>
+    <tr>
+    <td>DATE OF BIRTH</td>
+    <td>12.03.2004</td>
+    </tr>
+    <tr>
+    <td>MARITAL STATUS</td>
+    <td>UN-MARRIED</td>
+    </tr>
+    <tr>
+    <td>GENDER</td>
+    <td>FEMALE</td>
+    </tr>
+    <tr>
+        <td>PERMANENT ADDRESS</td>
+    <td>28\1,MIDDLE STREET,NOOROLAI<br>NOOROLAI POST,<br>VANAPURAM TK,<br>KALLAKURICHI DT<br>606205</td>
+    </tr>
+    <tr>
+        <td>LANGUAGE KNOWN</td>
+    <td>TAMIL AND ENGLISGH</td>
+    </tr>
+    <tr>
+    <td>NATIONALITY</td>
+    <td>INDIAN</td>
+    </tr>
+    <tr>
+    <td>RELIGION</td>
+    <td>HINDU</td>
+    </tr>
+    
+                        </table></ritu>
+                
+                    
+                </body>
+            </div>
+        </div>
+    </div>
+        </body>
+    </body>
+        </html>
